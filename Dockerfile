@@ -27,7 +27,7 @@ RUN curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -
 RUN sudo apt-get install -y nodejs
 
 # Install Gatsby CLI
-RUN npm install -g gatsby-cli
+RUN sudo npm install -g gatsby-cli
 
 # Install a VS Code extension:
 # Note: we use a different marketplace than VS Code. See https://github.com/cdr/code-server/blob/main/docs/FAQ.md#differences-compared-to-vs-code
