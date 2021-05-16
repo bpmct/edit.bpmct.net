@@ -3,8 +3,10 @@ on:
   push:
     branches:
       - main
+  
 jobs:
   push_to_registry:
+    if: github.repository == ‘cdr/deploy-code-server’ # delete this to enable CI for your repo
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
     steps:
